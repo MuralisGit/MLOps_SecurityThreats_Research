@@ -1,0 +1,36 @@
+Filtering Report
+============================================================
+Input file: full_pipeline_with_dockerfiles.xlsx
+Original number of repositories: 31066
+
+Step 1: Full 6-stage ML pipeline
+Required stages:
+  - Acquisition
+  - Preparation
+  - Modeling
+  - Training
+  - Evaluation
+  - Prediction
+A repository is considered to have the full ML pipeline only if all six stage columns are present and each one has a value greater than 0.
+Repositories after full 6-stage filtering: 17509
+
+Step 2: GitHub-based filtering
+Refresh metadata from GitHub API: True
+Minimum stars: 10
+Minimum contributors: 2
+Minimum commits: 1
+Recent activity constraint: pushed within the last 3 years
+
+Final number of repositories after all filters: 824
+
+Top repositories after filtering:
+  1. huggingface/transformers | stars=157752 | contributors=3821 | commits=9198
+  2. tensorflow/models | stars=77688 | contributors=955 | commits=7826
+  3. gradio-app/gradio | stars=41994 | contributors=473 | commits=3468
+  4. microsoft/qlib | stars=38614 | contributors=149 | commits=1706
+  5. hankcs/HanLP | stars=36193 | contributors=47 | commits=1625
+  6. deepset-ai/haystack | stars=24465 | contributors=332 | commits=1135
+  7. serengil/deepface | stars=22360 | contributors=96 | commits=736
+  8. microsoft/unilm | stars=22041 | contributors=75 | commits=633
+  9. NVIDIA/DeepLearningExamples | stars=14739 | contributors=114 | commits=1095
+  10. jindongwang/transferlearning | stars=14290 | contributors=42 | commits=964
